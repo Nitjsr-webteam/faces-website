@@ -7,7 +7,11 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background: radial-gradient(white, pink);
+  /* background: radial-gradient(white, pink); */
+  background: url(https://wallpaperaccess.com/full/1817030.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .home {
   display: flex;
@@ -52,7 +56,7 @@ body {
   background-size: 100% 100%;
   border-radius: 25px;
   padding: 10px;
-  box-shadow: 5px 10px 15px red;
+  box-shadow: 5px 10px 15px rgb(255, 238, 0);
 }
 .card {
   display: flex;
@@ -88,7 +92,7 @@ body {
   align-items: center;
   align-content: center;
   font-family: "Noto Serif Display", serif;
-  text-shadow: 2px 2px #f79393;
+  text-shadow: 2px 2px #9395f7;
 }
 .footer {
   display: flex;
@@ -162,6 +166,6 @@ body {
     align-items: center;
     align-content: center;
     font-family: "Noto Serif Display", serif;
-    text-shadow: 2px 2px #f79393;
+    text-shadow: 2px 2px #9395f7;
   }
 }
