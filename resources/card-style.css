@@ -7,12 +7,9 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background: radial-gradient(white, pink);
 }
 .home {
-  background-image: url(./bg-img.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   display: flex;
   align-items: center;
   align-content: center;
@@ -37,17 +34,34 @@ body {
 .logo-nitjsr {
   right: 5%;
 }
-.NITJSR {
-  background-color: black;
+.logo-img {
+  background-color: white;
 }
-
+.NITJSR {
+  height: 120%;
+  width: 50%;
+}
+.FACES {
+  height: 120%;
+  width: 50%;
+}
+.card-box {
+  background-image: url(./motion-bg_main-qimg-ddc0d4a86303d15503af11434b50f843.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 25px;
+  padding: 10px;
+  box-shadow: 5px 10px 15px red;
+}
 .card {
   display: flex;
-  background-color: rgb(196, 196, 196);
+  background-color: rgba(199, 199, 199, 0.5);
   flex-direction: column;
+  border-radius: inherit;
   padding: 10px;
   height: 30vh;
-  width: 30vw;
+  width: 40vw;
 }
 .card-head {
   display: flex;
@@ -56,22 +70,25 @@ body {
   margin: 0;
   text-align: center;
   font-family: "Satisfy", cursive;
-  font-size: 1.5rem;
-  background-color: white;
+  font-size: 1.2rem;
+  background-color: rgba(36, 36, 36, 0.719);
+  color: #93f7f2;
   align-content: center;
   justify-content: center;
   align-items: center;
 }
 .card-content {
-  height: 50%;
+  height: 60%;
   width: 100%;
-  font-size: xx-large;
+  font-size: 2.1rem;
   margin: 0;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
+  font-family: "Noto Serif Display", serif;
+  text-shadow: 2px 2px #f79393;
 }
 .footer {
   display: flex;
@@ -102,4 +119,49 @@ body {
   border: 0;
   padding: 10px 30px;
   border-radius: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .NITJSR {
+    height: 100%;
+    width: 120%;
+  }
+  .FACES {
+    height: 100%;
+    width: 120%;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 50vh;
+    width: 60vw;
+  }
+
+  .card-head {
+    display: flex;
+    height: 30%;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-family: "Satisfy", cursive;
+    font-size: 1.1rem;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-content {
+    height: 60%;
+    width: 100%;
+    font-size: 1.8rem;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: "Noto Serif Display", serif;
+    text-shadow: 2px 2px #f79393;
+  }
 }
